@@ -1,20 +1,20 @@
 # Skill
 
-本仓库保存可复用的助手 Skills（每个子目录一份 `SKILL.md`）。
+Reusable assistant Skills. Each skill is a folder with one `SKILL.md`.
 
-## 同步约定
+## Sync
 
-- **本机目录**：`D:\skill`（与本仓库内容一一对应）
-- **GitHub**：本仓库；以后新增或修改 skill 时，两边一起更新
-- 每个 skill 一个文件夹，内含 `SKILL.md`（YAML frontmatter + 步骤正文）
+Keep this repository and the local skills folder in sync whenever a skill is added or changed. Paths and machine-specific details belong in a one-off task, not in skill text.
 
-## 当前 Skills
+Layout: one directory per skill → `SKILL.md` (YAML frontmatter + steps).
 
-| 目录 | 名称 | 用途 |
+## Skills
+
+| Directory | Name | When to use |
 |---|---|---|
-| `annotation/` | annotation 静态页发布 | 标注对比/流程拆解静态页 → GitHub Pages 或本机 IP:端口 |
-| `paper-deep-read/` | Paper deep read | 论文精读 / 摘要 / Notion 入库（尤其具身与 VLA） |
+| `annotation/` | annotation 静态页发布 | Build/publish static annotation or pipeline-trace pages for **public** links (GitHub Pages first), optional self-hosted or local preview |
+| `paper-deep-read/` | Paper deep read | Paper skim / read / deep critique / Notion ingest (esp. embodied / VLA) |
 
-## 怎么用
+## Usage
 
-在助手对话里用 `/` 或 `@` 点技能名，或直接说任务；助手会按对应 `SKILL.md` 执行。
+Invoke via `/` or `@` in chat, or describe the task; the assistant follows the matching `SKILL.md`.
